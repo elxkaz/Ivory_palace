@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Ivory Palace</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="signup-page">
+        <h1 class="welcome-text">
+            Start your journey <br> of luxury.
+        </h1>
+
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+
+            <!-- Signup form -->
+            <form action="signup.php" method="POST">
+                <input type="text" name="fullname" placeholder="Full Name" pattern="[A-Za-z\s]+" required>
+                <input type="email" name="email" placeholder="Email" required>
+               <div class="password-field">
+                    <input type="password" id=passInput name="password" placeholder="Password" required minlength="8" required>
+                     <div class="show-password">
+                        <input type="checkbox" id="showPasswordCheckbox" onclick="document.getElementById('passInput').type = this.checked ? 'text' : 'password'">
+                    </div>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <div class="login-link">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
